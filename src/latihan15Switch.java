@@ -39,5 +39,7 @@ public class latihan15Switch {
         }
         System.out.println(ucapan);
 
+        //ea
+
     }
 }
