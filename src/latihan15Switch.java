@@ -38,5 +38,8 @@ public class latihan15Switch {
 
         }
         System.out.println(ucapan);
+
+        //coba menambah ini test saja sih wkwk
+
     }
 }
