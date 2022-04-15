@@ -28,6 +28,16 @@ public class practice17ForLoop {
         //}
 
         /*2. LOOPING with Init statement*/
+        for(var counter2 = 1; counter2 <= 10; ){
+            System.out.println("Looping 2 number "+ counter2);
+            counter2++;
+        }
+
+        /*3. LOOPING with Post statement*/
+        for(var counter3 = 1; counter3 <= 10; ){
+            System.out.println("Looping 3 number "+ counter3);
+            counter3++;
+        }
     }
 }
 
