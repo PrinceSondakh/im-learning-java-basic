@@ -29,17 +29,29 @@ public class latihan15Switch {
 
         var nilai2 = "A";
         String ucapan;
-//ini namanya Switch
+//ini namanya Switch tanpa yield
         switch(nilai){
             case "A" -> ucapan = "Wow anda lulus dgn baik";
             case "B", "C" -> ucapan = "Nilai anda cukup baik";
             case "D" -> ucapan = "Anda tdk lulus";
-            default -> ucapan = "Anda salah jurusan";
-
+            default -> {
+                ucapan = "Anda salah jurusan";
+            }
         }
         System.out.println(ucapan);
 
-        //ea
+        //SWITCH with yield (yield is for return value) YIELD JUGA HANYA BISA DIGUNAKAN DI JAVA VERSI 14
 
+        ucapan = switch (nilai){
+            case "A":
+                yield "Wow anda lulus dgn baik";
+            case "B", "C" :
+                yield "Nilai anda cukup baik";
+            case "D" :
+                yield "Anda tdk lulus";
+            default :
+                yield "Anda salah jurusan";
+        };
+        System.out.println(ucapan);
     }
 }
