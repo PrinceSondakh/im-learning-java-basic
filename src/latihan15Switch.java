@@ -17,7 +17,7 @@ public class latihan15Switch {
             default:
                 System.out.println("Mungkin anda tidak lulus");
         }
-
+//INI NAMANYA SWITCH LAMBDA HANYA BISA DIGUNAKAN DI JAVA 14 Keatas
         switch(nilai){
             case "A" -> System.out.println("Wow anda lulus dgn baik");
             case "B", "C" -> System.out.println("Nilai anda cukup baik");
@@ -29,7 +29,7 @@ public class latihan15Switch {
 
         var nilai2 = "A";
         String ucapan;
-
+//ini namanya Switch
         switch(nilai){
             case "A" -> ucapan = "Wow anda lulus dgn baik";
             case "B", "C" -> ucapan = "Nilai anda cukup baik";
