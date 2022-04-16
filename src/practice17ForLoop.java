@@ -34,9 +34,8 @@ public class practice17ForLoop {
         }
 
         /*3. LOOPING with Post statement*/
-        for(var counter3 = 1; counter3 <= 10; ){
+        for(var counter3 = 1; counter3 <= 10; counter3++){
             System.out.println("Looping 3 number "+ counter3);
-            counter3++;
         }
     }
 }
