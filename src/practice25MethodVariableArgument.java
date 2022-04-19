@@ -12,7 +12,7 @@ public class practice25MethodVariableArgument {
     //Ini pakai aray ==========================================================
     static void sayCongrats(String name, int[] values){
         var total = 0;
-        for (var value : values){
+        for (var value : values){ //value didalam values
             total += value;
         }
         var finalValue = total / values.length;
