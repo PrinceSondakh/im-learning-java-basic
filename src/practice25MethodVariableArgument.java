@@ -7,6 +7,8 @@ public class practice25MethodVariableArgument {
         int[] values = {80, 50, 50, 50, 80};
         sayCongrats("Guderian", values);
         //=====================================================
+        //Ini pakai argument
+        sayCongratsWithArgument("Heinz", 80, 80, 80, 80, 80);
     }
 
     //Ini pakai aray ==========================================================
@@ -23,4 +25,19 @@ public class practice25MethodVariableArgument {
             System.out.println("Sorry" + name + ", You don't pass this semester");
         }
     }
+
+    static void sayCongratsWithArgument(String name, int... values){
+        var total = 0;
+        for (var value : values){ //value didalam values
+            total += value;
+        }
+        var finalValue = total / values.length;
+
+        if (finalValue >= 75){ //nilai rata2
+            System.out.println("Congrats " + name + ", You are graduate!");
+        } else {
+            System.out.println("Sorry" + name + ", You don't pass this semester");
+        }
+    }
+
 }
