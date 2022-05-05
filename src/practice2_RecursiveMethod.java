@@ -1,20 +1,44 @@
 public class practice2_RecursiveMethod {
     public static void main(String[] args) {
-        System.out.println(factorialPanggil(5));
-        System.out.println(1 * 2 * 3 * 4 * 5);
-        System.out.println(1 + 2 + 3 + 4 + 5);
-    }
+        System.out.println(specialCase(5));
+        System.out.println(factorialLoopo(5));
+        System.out.println(factorialRecursive(5));
 
-    static int factorialPanggil(int nilai){
+        loop(10000);
+    }
+    /** special case */
+    static int specialCase(int nilai){
         var result = 1; //kalau mau tambah bagusnya result dibikin 0
 
         for(var counter = 1; counter <= nilai; counter++){
-            System.out.println("result now " + result);
-            result += counter;
-
+            result += counter; //tambah
         }
-
         return result;
     }
+    /** factorial Loop manual*/
+    static int factorialLoopo(int nilai){
+        var result = 1;
+        for(var counter = 1; counter <= nilai; counter++){
+            result *= counter;
+        }
+        return result;
+    }
+    static int factorialRecursive(int nilai){
+        if (nilai == 1){
+            return 1;
+        } else {
+            return nilai * factorialRecursive(nilai - 1);
+        }
+    }
+    //Stackoverflow //cuma bisa handle sekitar 6500 method tergantung memory
+    static void loop(int value){
+        if (value == 0){
+            System.out.println("Selesai");
+        } else {
+            System.out.println("Loop " + value);
+            loop(value - 1);
+        }
+    }
+
 
 }
