@@ -7,6 +7,8 @@ public class practice2_IfStatement {
 
         if(((a >= 70 && b >= 70)&&(a >= 70 && b >= 70))&&((a >= 70 && b >= 70)&&(a >= 70 && b >= 70))){
             System.out.println("Selamat anda lulus");
+        } else {
+            System.out.println("sialan wkwk");
         }
 
     }
