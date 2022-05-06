@@ -3,8 +3,10 @@ public class practice2_RecursiveMethod {
         System.out.println(specialCase(5));
         System.out.println(factorialLoopo(5));
         System.out.println(factorialRecursive(5));
+        for(;;){
 
-        loop(10000);
+        }
+        //loop(10000);
     }
     /** special case */
     static int specialCase(int nilai){
