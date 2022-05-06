@@ -7,8 +7,8 @@ public class practice27RecursiveMethod {
     *
     * */
     public static void main(String[] args) {
-        System.out.println(factorial(5));
-        System.out.println(1 * 2 * 3 * 4 * 5);
+        //System.out.println(factorial(5));
+        //System.out.println(1 * 2 * 3 * 4 * 5);
         System.out.println(factorialRecursive(5));
         //loop(10000); kapasitas pemanggilan method di komp ini hny sampai 6800 method, krn tergantung memori
     }
