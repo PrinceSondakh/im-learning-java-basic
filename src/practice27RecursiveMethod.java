@@ -23,7 +23,7 @@ public class practice27RecursiveMethod {
         return result;
     }
 
-    //Recursive Method
+    //Recursive Method /
     static int factorialRecursive(int value){
         if(value == 1){
             return 1;
