@@ -32,6 +32,15 @@ public class practice27RecursiveMethod {
         }
     }
 
+    //Recursive Method test pemahaman 2 /
+    static int factorialRecursive(int value2){
+        if(value2 == 1){
+            return 1;
+        } else {
+            return value2 * factorialRecursive(value2 - 1);
+        }
+    }
+
     //Stackoverflow
     static void loop(int value){
         if (value == 0){
