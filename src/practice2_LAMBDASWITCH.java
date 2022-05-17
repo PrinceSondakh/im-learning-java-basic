@@ -1,7 +1,7 @@
 public class practice2_LAMBDASWITCH {
     //Tidak perlu kata kunci break
     public static void main(String[] args) {
-
+//j
         var nilai = "A";
 
         switch (nilai){
