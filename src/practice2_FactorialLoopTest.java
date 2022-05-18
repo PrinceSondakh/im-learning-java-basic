@@ -12,7 +12,4 @@ public class practice2_FactorialLoopTest {
         }
         return nilai;
     }
-
- //   public static int
-
 }
