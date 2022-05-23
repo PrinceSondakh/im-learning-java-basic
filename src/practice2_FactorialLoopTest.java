@@ -10,7 +10,7 @@ public class practice2_FactorialLoopTest {
         for(int i = 1; i <= value; i++){
             nilai *= i;
         }
-        //df
+        //d
         return nilai;
     }
 }
